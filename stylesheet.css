@@ -1,0 +1,55 @@
+h1{
+    display: block;
+}
+.bnt{
+    margin-left: 1.8%;
+    width: 16%;
+    display: inline-flex;
+}
+.bnt button{    
+    margin-left: 2.8%;
+    background-color: rgb(104, 223, 253);
+    border: 2px solid rgb(150, 150, 150);
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.bnt button:hover{
+    opacity: .7;
+}
+.bnt button:active{
+        opacity: .9;
+}
+#main{
+    display: none;
+    border: 1px solid rgb(110, 110, 110);
+    text-align: center;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: #eeeeee;
+}
+img{
+    display: inline;
+    width: 14%;
+    height: 160px;
+    margin-left: 3%;
+    border: 10px solid black;
+}
+#msg{
+    line-height:650px;
+	width: 575px;
+    height: 650px;
+	border:5px solid black;
+	margin:0 auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+    text-align: center;
+    background-size: cover;
+    margin-bottom:25px;
+    font-size: 150%;
+}
+.msg p{
+    line-height: 650px;
+}
