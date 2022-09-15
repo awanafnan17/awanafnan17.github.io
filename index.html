@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body onload="loadFruits()">
+    <h1>Changing Styles</h1>
+    <div class="bnt" id="bnt">
+        <button type="button" onclick="closeMe()">CLOSE!</button>
+        <button type="button" onclick="openMe()">OPEN!</button>
+        <button type="button" onclick="reloadThePage()">REFRESH!</button>
+    </div>
+
+
+    <p onclick="console.log(this.innerHTML)" id="p2">Something new this time, you can now open or
+        close this paragraph using the above buttons.</p><br>
+    <hr>
+<br>
+
+
+
+    <div id="main">
+        <div class="msg" id="msg">
+            <p>Hover over any image!</p>
+        </div>
+        <img class="preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" alt="happy"
+            onmouseover="fir(this)" onmouseleave="undo()">
+
+        <img class="preview" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" alt="sleepy"
+            onmouseover="sec(this)" onmouseleave="undo()">
+    </div><br>
+    <button onclick="myFruits()">Add your favourite!</button>
+    <p id="fruits"></p>
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
