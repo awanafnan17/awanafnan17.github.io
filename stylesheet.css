@@ -53,3 +53,9 @@ img{
 .msg p{
     line-height: 650px;
 }
+.form{
+    display: inline;
+}
+.form h2{
+    text-decoration: underline;
+}
