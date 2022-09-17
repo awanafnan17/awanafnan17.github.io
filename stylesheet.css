@@ -56,9 +56,6 @@ img{
 .form{
     display: inline;
 }
-.form h2{
-    text-decoration: underline;
-}
 ::placeholder{
     margin-left: 2%;
 }

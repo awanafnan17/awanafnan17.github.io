@@ -38,8 +38,9 @@
     <hr>
 
     <div class="form">
-        <h2>Only HTML</h2>
         <form onsubmit="return onChange()">
+            <fieldset>
+                <legend><h4>Only HTML</h4></legend>
             <label for="Name">Name:</label> <input type="text" id="name" name="name" placeholder="username"
                 pattern="[0-9]{0-6}"><br>
             <label for="Email">Email:</label>
@@ -75,6 +76,7 @@
             <label for="url">URL: </label>
             <input type="url" id="URL" name="url"><br>
             <input type="submit" value="Click Here">
+            </fieldset>
         </form>
     </div>
     <hr>
