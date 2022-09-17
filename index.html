@@ -19,8 +19,7 @@
 
     <p onclick="console.log(this.innerHTML)" id="p2">Something new this time, you can now open or
         close this paragraph using the above buttons.</p><br>
-    <hr>
-<br>
+    <br>
 
 
 
@@ -36,13 +35,26 @@
     </div><br>
     <button onclick="myFruits()">Add your favourite fruit!</button>
     <p id="fruits"></p>
+    <hr>
 
     <div class="form">
         <h2>Only HTML</h2>
-        <form>
-            <label for="Name">Name:</label> <input type="text" id="name" name="name"><br><br>
-            <label for="Email">Email:</label> <input type="email" name="email"><br><br>
-            <label for="Password">Password:</label> <input type="password" name="password"><br><br>
+        <form onsubmit="return onChange()">
+            <label for="Name">Name:</label> <input type="text" id="name" name="name" placeholder="username"
+                pattern="[0-9]{0-6}"><br>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required><br>
+
+            <label for="Email">Confirm Email:</label>
+
+            <input type="email" id="confirm_email" name="email" placeholder="confirm email" required
+                onchange="return onChange()"><br>
+
+            <input type="submit" value="Confirm Emails"><br>
+
+            <label for="Password">Password:</label> 
+            <input type="password" name="password" placeholder="password"><br>
+            <label for="Radio Buttons">Radio Buttons</label><br>
             <input type="radio" id="HTML" name="fav_language" value="HTML">
             <label for="HTML">HTML</label><br>
             <input type="radio" id="CSS" name="fav_language" value="CSS">
@@ -50,19 +62,38 @@
             <input type="radio" id="JavaScript" name="fav_language" value="JavaScript">
             <label for="JavaScript">JavaScript</label><br>
             <input type="radio" id="All of the above" name="fav_language" value="All of the above">
-            <label for="All of the above">All of the above</label><br>
+            <label for="All of the above">All of the above</label>
+            <br>
             <label for="range">Range: </label>
-            <input type="range" id="Range" name="range" value="Range"><br><br>
+            <input type="range" id="Range" name="range" value="Range"><br>
             <label for="number">Number: </label>
-            <input type="number" id="Number" name="number" value="Number"><br><br>
+            <input type="number" id="Number" name="number"><br>
             <label for="color">Color: </label>
-            <input type="color" id="Color" name="color" value="Color"><br><br>
-            <label for="url">Url: </label>
-            <input type="url" id="Url" name="url"><br><br>
-            <input type="submit" value="submit">
+            <input type="color" id="Color" name="color"><br>
+            <label for="date">Date: </label>
+            <input type="date" id="date" name="Date"><br>
+            <label for="url">URL: </label>
+            <input type="url" id="URL" name="url"><br>
+            <input type="submit" value="Click Here">
         </form>
     </div>
-
+    <hr>
+    <div class="form2">
+        <form>
+            <fieldset>
+                <legend>Simple Task</legend>
+                <label for="fname">First Name:<input type="text" id="first name" placeholder="First Name" required></label><br>
+                <label for="lname">Last Name:<input type="text" id="last name" placeholder="Last Name" required></label><br>
+                <label for="ynick">Nickname?:</label>
+                <input type="checkbox" id="ynick" name="nick" value="ynick" onchange="nickfunction()"><br>
+            <div id="nick">
+                <label for="nickname">Nickname:</label>
+                <input type="text" id="nickname" placeholder="Nickname">
+            </div><br>    
+            <input type="submit" value="Verify">
+            </fieldset>
+        </form>
+    </div>
 
     <script src="js.js"></script>
 </body>

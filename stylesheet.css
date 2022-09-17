@@ -59,3 +59,10 @@ img{
 .form h2{
     text-decoration: underline;
 }
+::placeholder{
+    margin-left: 2%;
+}
+#nick{
+    margin-left: 4%;
+    display: none;
+}
