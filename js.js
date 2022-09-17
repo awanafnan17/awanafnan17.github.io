@@ -65,32 +65,32 @@ var nam = prompt("what is your name?");
 
 if (nam.length != 0) {
     if (nam == "afnan")
-    document.write(`<h2>What a beautiful name, ${nam}!<h2>`);
+        document.getElementById('afn').innerHTML = "What a beautiful name, " + nam + "!";
     else
-    document.write("GoodMorning " + nam);
+        document.getElementById('afn').innerHTML = "GoodMorning " + nam;
 }
 else
-    document.write("<h4>Are you feeling shy?</h4>");
+    document.getElementById('afn').innerHTML = "<h4>Are you feeling shy?</h4>";
 
 
-function onChange(){
+function onChange() {
     var email = document.getElementById('email');
     var confirm_email = document.getElementById('confirm_email');
-    if (email.value != confirm_email.value){
-    alert("Both emails must be same");
-    return false;
+    if (email.value != confirm_email.value) {
+        alert("Both emails must be same");
+        return false;
     }
 }
-function returnToPreviousPage(){
+function returnToPreviousPage() {
     window.history.back();
 }
-function nickfunction(){
-    if(document.getElementById('ynick').checked){
-        document.getElementById('nick').style.display="inline";
+function nickfunction() {
+    if (document.getElementById('ynick').checked) {
+        document.getElementById('nick').style.display = "inline";
         document.getElementById('nickname').setAttribute('required', true);
     }
-    else{
-        document.getElementById('nick').style.display="none";
+    else {
+        document.getElementById('nick').style.display = "none";
         document.getElementById('nickname').removeAttribute('required');
     }
 }
